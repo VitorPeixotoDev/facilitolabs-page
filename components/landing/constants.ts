@@ -1,10 +1,12 @@
-export const LOGO_SRC =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuAQO1vAn8cS-zp_nKl6KuR_GPN-RYw983Nn_DoYUCZWMi4oU7oYYmAVkgxHDrDSx9Kwi8xkTgM2PjAlRqBO2HqmYPCS_E0-D75XJGlL6E2W4ZrR-ZiD2uOidYh9QZP9KOsy2B0QNqrNU9I6fRYnfDEgjfRg2jMzDmA_qwoRGNDJH0jk5bk4OInhBNo9aq50eE4ADH-5qzqnltRDuOvUlGzKsVm7zuiCJ2rb5q9_NtRan90tXq9wNJt0Jgxkq_2UTpjMsZMCwhpdC0JC";
+export const LOGO_SRC = "/labs-logo_bg.png";
+
+export const ATS_GRATUITO_URL = "https://rh.facilitovagas.com";
 
 export const NAV_LINKS = [
   { label: "Ecossistema", href: "#ecossistema" },
   { label: "Testes de Clima", href: "#portfolio" },
   { label: "NR-1", href: "#nr1" },
+  { label: "FAQ", href: "#faq" },
   { label: "Indicação", href: "#indicacao" },
 ] as const;
 
@@ -51,19 +53,19 @@ export const CLIMATE_PRODUCTS = [
     icon: "thermostat",
     title: "Termômetro de Clima",
     description:
-      "Pulsos rápidos e frequentes para acompanhar o engajamento do time em tempo real durante períodos de transição ou crescimento.",
+      "Pesquisa de clima organizacional com pulsos rápidos e frequentes para acompanhar o engajamento do time em tempo real — ideal para transições, crescimento ou monitoramento contínuo.",
   },
   {
     icon: "supervisor_account",
     title: "Lente das Lideranças",
     description:
-      "Mapeamento do alinhamento da média gestão e o impacto direto do comando no dia a dia operacional.",
+      "Diagnóstico organizacional focado na média gestão: mapeamento do alinhamento de lideranças e o impacto direto do comando no clima e na produtividade operacional.",
   },
   {
     icon: "analytics",
     title: "Diagnóstico de Engajamento e Cultura",
     description:
-      "Pesquisas profundas e estruturadas para grandes corporações consolidarem seus pilares institucionais e reterem talentos.",
+      "Teste de clima organizacional profundo e estruturado para grandes corporações consolidarem pilares institucionais, reterem talentos e cumprirem exigências de SST.",
   },
 ] as const;
 
