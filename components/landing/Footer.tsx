@@ -7,21 +7,18 @@ export function Footer() {
       <div className="mx-auto max-w-container-max px-margin-mobile md:px-margin-desktop">
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
           <div className="text-center md:text-left">
-            <div className="mb-4 flex items-center justify-center gap-3 md:justify-start">
+            <div className="mb-4 flex items-center justify-center md:justify-start">
               <Image
                 src={LOGO_SRC}
-                alt="Facilitô! Labs Logo"
-                width={128}
-                height={32}
+                alt="Facilitô! Labs"
+                width={2816}
+                height={1536}
                 className="h-8 w-auto"
               />
-              <span className="font-headline-lg text-headline-lg text-on-surface">
-                Facilitô! Labs
-              </span>
             </div>
             <p className="max-w-sm font-body-md text-body-md text-on-surface-variant">
-              ATS Gratuito + Labs Analytics. © {new Date().getFullYear()}{" "}
-              Facilitô! Labs.
+              Teste de clima organizacional e conformidade NR-1 para qualquer
+              empresa. © {new Date().getFullYear()} Facilitô! Labs.
             </p>
           </div>
 
@@ -43,6 +40,12 @@ export function Footer() {
               className="font-body-md text-body-md text-on-surface-variant transition-colors hover:text-primary"
             >
               NR-1
+            </a>
+            <a
+              href="#faq"
+              className="font-body-md text-body-md text-on-surface-variant transition-colors hover:text-primary"
+            >
+              FAQ
             </a>
             <a
               href="#contato"

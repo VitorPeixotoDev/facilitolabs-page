@@ -7,22 +7,29 @@ export function NR1IntelligenceSection() {
     <section
       id="nr1"
       className="mx-auto max-w-container-max scroll-mt-24 px-margin-mobile py-24 md:px-margin-desktop"
+      aria-labelledby="nr1-heading"
     >
       <div className="mb-16 max-w-4xl">
         <span className="mb-4 inline-block font-label-sm text-label-sm uppercase tracking-widest text-primary">
-          Inteligência em NR-1
+          Conformidade NR-1 — Riscos Psicossociais
         </span>
-        <h2 className="mb-6 font-headline-xl text-headline-lg md:text-headline-xl">
-          Dados estratégicos que apontam exatamente onde o seu RH deve intervir.
+        <h2
+          id="nr1-heading"
+          className="mb-6 font-headline-xl text-headline-lg md:text-headline-xl"
+        >
+          Adequação à NR-1 com dados que apontam exatamente onde o RH deve
+          intervir.
         </h2>
         <p className="font-body-lg text-body-lg text-on-surface-variant">
           Esqueça relatórios que vão para a gaveta. Nossa metodologia de
-          diagnóstico da NR-1 (inspirada no case real de sucesso da{" "}
+          gestão de riscos psicossociais e diagnóstico de conformidade NR-1
+          {/* (inspirada no case real de sucesso da{" "}
           <strong className="text-on-surface">
             Nefe Capital Supermercados — Lente da CIPA Ocupacional
           </strong>
-          ) garante até 100% de taxa de resposta utilizando coletas dinâmicas via
-          mobile ou mural.
+          ) */}
+          {" "}garante até 100% de taxa de resposta utilizando coletas dinâmicas via
+          celular do próprio colaborador.
         </p>
       </div>
 
@@ -39,7 +46,7 @@ export function NR1IntelligenceSection() {
           <div className="flex items-center gap-3 rounded-full border border-primary/20 bg-primary/5 px-4 py-2">
             <Icon name="smartphone" className="text-primary" />
             <span className="font-label-md text-label-md text-on-surface-variant">
-              Coleta via mobile ou mural
+              Coleta via celular do colaborador
             </span>
           </div>
         </div>

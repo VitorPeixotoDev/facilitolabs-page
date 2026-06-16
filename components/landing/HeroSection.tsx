@@ -1,41 +1,41 @@
-import { Button } from "@/components/ui/Button";
+import { AtsGratuitoLink } from "@/components/ui/AtsGratuitoLink";
 
 export function HeroSection() {
   return (
-    <section className="relative flex min-h-[92vh] flex-col items-center justify-center overflow-hidden px-margin-mobile pt-24 text-center hero-gradient md:px-margin-desktop">
+    <section className="relative flex min-h-[92vh] flex-col items-center justify-center overflow-hidden px-margin-mobile pb-24 pt-24 text-center hero-gradient md:px-margin-desktop md:pb-32 lg:pb-40">
       <div className="z-10 max-w-5xl">
         <span className="mb-6 inline-block rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 font-label-sm text-label-sm uppercase tracking-widest text-primary">
-          Facilitô! Labs &amp; ATS Integrado
+          Teste de Clima Organizacional + Conformidade NR-1
         </span>
 
         <h1 className="mb-6 font-display-lg text-[2.25rem] leading-tight md:text-display-lg md:text-[56px] lg:text-[64px]">
-          Zere o custo do seu software de R&amp;S e{" "}
-          <span className="text-primary">blinde sua empresa</span> contra passivos
-          da NR-1.
+          Testes de clima organizacional e{" "}
+          <span className="text-primary">conformidade NR-1</span> para qualquer
+          empresa.
         </h1>
 
         <p className="mx-auto mb-10 max-w-3xl font-body-lg text-body-lg text-on-surface-variant">
-          Use nosso ATS com match inteligente para atrair talentos de forma 100%
-          gratuita, eliminando de vez os currículos em PDF e a bagunça nos
-          e-mails. Conecte nativamente os testes do Facilitô! Labs para auditar o
-          clima e garantir conformidade jurídica desde o primeiro dia.
+          Adequação prática e definitiva às novas exigências da NR-1 sobre riscos
+          psicossociais. Pesquisa de clima organizacional, diagnóstico setorial e{" "}
+          <AtsGratuitoLink variant="inline">ATS gratuito</AtsGratuitoLink>{" "}
+          integrado — do varejo à indústria, para empresas de todos os portes.
         </p>
 
         <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <Button className="w-full sm:w-auto">
+          <AtsGratuitoLink variant="button" className="w-full sm:w-auto">
             Começar a Usar Gratuitamente
-          </Button>
+          </AtsGratuitoLink>
         </div>
 
         <div className="mt-12 flex flex-wrap items-center justify-center gap-6 border-t border-white/10 pt-8">
-          <div className="flex items-center gap-2">
+          <AtsGratuitoLink variant="stat" ariaLabel="Acessar ATS Gratuito — R$ 0">
             <span className="font-headline-lg text-headline-lg font-bold text-primary">
               R$ 0
             </span>
-            <span className="font-body-md text-body-md text-on-surface-variant">
+            <span className="font-body-md text-body-md text-on-surface-variant group-hover:text-on-surface">
               ATS gratuito
             </span>
-          </div>
+          </AtsGratuitoLink>
           <div className="hidden h-6 w-px bg-white/10 sm:block" />
           <div className="flex items-center gap-2">
             <span className="font-headline-lg text-headline-lg font-bold text-primary">

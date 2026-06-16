@@ -6,15 +6,25 @@ export function ClimatePortfolioSection() {
     <section
       id="portfolio"
       className="bg-surface-container-lowest py-24 scroll-mt-24"
+      aria-labelledby="portfolio-heading"
     >
       <div className="mx-auto max-w-container-max px-margin-mobile md:px-margin-desktop">
         <div className="mb-16 text-center">
           <span className="mb-4 inline-block font-label-sm text-label-sm uppercase tracking-widest text-primary">
-            Labs Modular
+            Testes de Clima Organizacional
           </span>
-          <h2 className="mx-auto mb-6 max-w-3xl font-headline-xl text-headline-lg md:text-headline-xl">
-            Ferramentas modulares para o momento exato da sua empresa.
+          <h2
+            id="portfolio-heading"
+            className="mx-auto mb-6 max-w-3xl font-headline-xl text-headline-lg md:text-headline-xl"
+          >
+            Pesquisa de clima organizacional modular para cada momento da sua
+            empresa.
           </h2>
+          <p className="mx-auto max-w-2xl font-body-lg text-body-lg text-on-surface-variant">
+            Ferramentas de diagnóstico organizacional e engajamento adaptáveis a
+            qualquer setor — varejo, indústria, serviços, logística e
+            administrativo.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 gap-gutter md:grid-cols-3">

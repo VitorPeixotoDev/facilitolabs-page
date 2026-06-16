@@ -1,39 +1,56 @@
 import Image from "next/image";
 import { LOGO_SRC, NAV_LINKS } from "@/components/landing/constants";
-import { Button } from "@/components/ui/Button";
+import { MobileMenu } from "@/components/landing/MobileMenu";
+import { AtsGratuitoLink } from "@/components/ui/AtsGratuitoLink";
 
 export function Header() {
   return (
-    <nav className="fixed top-0 z-50 flex h-20 w-full items-center justify-between border-b border-white/10 bg-surface/60 px-margin-mobile backdrop-blur-xl md:px-margin-desktop">
-      <div className="flex items-center gap-3 md:gap-4">
-        <Image
-          src={LOGO_SRC}
-          alt="Facilitô! Labs Logo"
-          width={160}
-          height={40}
-          className="h-8 w-auto md:h-10"
-          priority
-        />
-        <span className="hidden font-headline-lg text-headline-lg font-bold tracking-tight text-on-surface sm:inline">
-          Facilitô! Labs
-        </span>
-      </div>
+    <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-surface/60 backdrop-blur-xl">
+      <nav
+        className="mx-auto flex h-20 max-w-container-max items-center justify-between px-margin-mobile md:px-margin-desktop"
+        aria-label="Navegação principal"
+      >
+        <a
+          href="/"
+          className="group relative flex shrink-0 items-center"
+          aria-label="Facilitô! Labs — início"
+        >
+          <Image
+            src={LOGO_SRC}
+            alt="Facilitô! Labs"
+            width={2816}
+            height={1536}
+            className="h-12 w-auto drop-shadow-[0_0_18px_rgba(170,199,255,0.25)] transition-transform duration-300 group-hover:scale-[1.03] md:h-14"
+            priority
+          />
+        </a>
 
-      <div className="hidden gap-8 lg:flex">
-        {NAV_LINKS.map((link) => (
+        <div className="hidden items-center gap-6 lg:flex">
+          {NAV_LINKS.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="font-label-md text-label-md text-on-surface-variant transition-colors duration-300 hover:text-primary"
+            >
+              {link.label}
+            </a>
+          ))}
           <a
-            key={link.href}
-            href={link.href}
+            href="#contato"
             className="font-label-md text-label-md text-on-surface-variant transition-colors duration-300 hover:text-primary"
           >
-            {link.label}
+            Contato
           </a>
-        ))}
-      </div>
+          <AtsGratuitoLink
+            variant="button"
+            className="rounded-full px-5 py-2.5 text-[13px] md:px-6 md:text-label-md"
+          >
+            ATS Gratuito
+          </AtsGratuitoLink>
+        </div>
 
-      <Button className="rounded-full px-4 py-2.5 text-[13px] md:px-6 md:text-label-md">
-        Começar a Usar Gratuitamente
-      </Button>
-    </nav>
+        <MobileMenu />
+      </nav>
+    </header>
   );
 }

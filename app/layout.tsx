@@ -1,10 +1,15 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+import { JsonLd } from "@/components/seo/JsonLd";
+import { buildMetadata } from "@/lib/seo";
 import "./globals.css";
 
-export const metadata: Metadata = {
-  title: "Facilitô! Labs — ATS Gratuito + Conformidade NR-1",
-  description:
-    "Zere o custo do seu software de R&S e blinde sua empresa contra passivos da NR-1. ATS gratuito com match inteligente integrado aos testes de clima e conformidade do Facilitô! Labs.",
+export const metadata: Metadata = buildMetadata();
+
+export const viewport: Viewport = {
+  themeColor: "#0066cc",
+  colorScheme: "dark",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -31,6 +36,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen bg-background text-on-background selection:bg-primary/30">
+        <JsonLd />
         {children}
       </body>
     </html>
